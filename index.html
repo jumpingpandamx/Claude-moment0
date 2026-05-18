@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Momento 0 — Eventos que conectan</title>
+  <meta name="description" content="Momento 0 es una colección de experiencias únicas: speed dating, noches de juegos, catas de vino y coffee parties en la Colonia Roma, CDMX." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="#">Momento <span>0</span></a>
+      <ul class="nav__links">
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto" class="btn btn--sm">Reserva tu lugar</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <p class="hero__tag">Colonia Roma · CDMX</p>
+      <h1 class="hero__title">El momento<br/>en que todo<br/><em>comienza.</em></h1>
+      <p class="hero__sub">Experiencias diseñadas para conectar, disfrutar y recordar. Eventos sociales, corporativos y culturales en un espacio que lo tiene todo.</p>
+      <a href="#eventos" class="btn btn--primary">Ver próximos eventos</a>
+    </div>
+    <div class="hero__scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="nosotros">
+    <div class="container about__grid">
+      <div class="about__text">
+        <span class="label">¿Qué es Momento 0?</span>
+        <h2>Ese instante justo antes<br/>de que todo pase.</h2>
+        <p>Momento 0 nació de la idea de que los mejores recuerdos empiezan en un punto específico: el momento en que decides estar presente. Creamos eventos únicos en un hotel boutique en la Colonia Roma donde la experiencia lo es todo — desde la primera copa hasta el último beat.</p>
+        <p>Sociales, corporativos, exposiciones, degustaciones. Si hay personas, hay historia. Y aquí creamos la tuya.</p>
+      </div>
+      <div class="about__stats">
+        <div class="stat">
+          <strong>4</strong>
+          <span>Tipos de evento</span>
+        </div>
+        <div class="stat">
+          <strong>Roma</strong>
+          <span>Ubicación</span>
+        </div>
+        <div class="stat">
+          <strong>∞</strong>
+          <span>Conexiones</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTOS -->
+  <section class="eventos" id="eventos">
+    <div class="container">
+      <span class="label">Próximas experiencias</span>
+      <h2 class="section-title">Elige tu Momento 0</h2>
+
+      <div class="eventos__grid">
+
+        <!-- Speed Dating -->
+        <article class="card card--dating">
+          <div class="card__badge">Social</div>
+          <div class="card__emoji">💫</div>
+          <h3 class="card__title">Speed Dating</h3>
+          <p class="card__desc">Cuatro minutos. Una persona. La posibilidad de que todo cambie. Conoce a todos los asistentes en una noche de conversaciones rápidas, snacks y bebida incluida. Si hay chispa, se comparte número de WhatsApp.</p>
+          <ul class="card__details">
+            <li>⏱ 4 min por pareja</li>
+            <li>🍹 Bebida y snacks incluidos</li>
+            <li>📲 Match = intercambio de WhatsApp</li>
+          </ul>
+          <a href="#contacto" class="btn btn--outline">Quiero asistir</a>
+        </article>
+
+        <!-- Noche de Juegos -->
+        <article class="card card--games">
+          <div class="card__badge">Social</div>
+          <div class="card__emoji">🎲</div>
+          <h3 class="card__title">Noche de Juegos de Mesa</h3>
+          <p class="card__desc">Olvídate de la pantalla. Una noche rodeada de juegos clásicos y modernos, buena comida, snacks y la mejor compañía. Cover de entrada, todo lo demás es diversión.</p>
+          <ul class="card__details">
+            <li>🃏 Selección de juegos de mesa</li>
+            <li>🍕 Ronda de snacks y comida</li>
+            <li>🎟 Cover de entrada</li>
+          </ul>
+          <a href="#contacto" class="btn btn--outline">Quiero asistir</a>
+        </article>
+
+        <!-- Cata de Vinos -->
+        <article class="card card--wine">
+          <div class="card__badge">Cultural</div>
+          <div class="card__emoji">🍷</div>
+          <h3 class="card__title">Cata de Vinos</h3>
+          <p class="card__desc">Una experiencia sensorial para los que quieren saber más sobre el mundo del vino. Degustación guiada, maridaje, información vinícola y todo lo que quieras comer. El vino ya está incluido.</p>
+          <ul class="card__details">
+            <li>🍇 Vinos seleccionados incluidos</li>
+            <li>📖 Guía de cata y maridaje</li>
+            <li>🧀 Comida a la carta</li>
+          </ul>
+          <a href="#contacto" class="btn btn--outline">Quiero asistir</a>
+        </article>
+
+        <!-- Coffee Party -->
+        <article class="card card--coffee">
+          <div class="card__badge">Fiesta</div>
+          <div class="card__emoji">☕</div>
+          <h3 class="card__title">Coffee Party</h3>
+          <p class="card__desc">¿Por qué esperar a la noche para festejar? A partir de las 10am, DJ en vivo, café de especialidad, pan artesanal y si quieres algo con más vuelo: mimosas, cervezas y cócteles ligeros. Cinco horas de pura energía matutina.</p>
+          <ul class="card__details">
+            <li>☀️ 10am — 3pm</li>
+            <li>🎵 DJ en vivo · 5 horas</li>
+            <li>🥂 Café + opción de alcohol ligero</li>
+          </ul>
+          <a href="#contacto" class="btn btn--outline">Quiero asistir</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TIPOS DE EVENTO -->
+  <section class="tipos">
+    <div class="container">
+      <span class="label">¿Tienes algo en mente?</span>
+      <h2 class="section-title">También organizamos</h2>
+      <div class="tipos__grid">
+        <div class="tipo">🥂 Eventos Sociales</div>
+        <div class="tipo">💼 Corporativos</div>
+        <div class="tipo">🖼 Exposiciones</div>
+        <div class="tipo">🎤 Presentaciones</div>
+        <div class="tipo">🎂 Celebraciones</div>
+        <div class="tipo">🤝 Networking</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="container contacto__inner">
+      <h2>¿Listo para tu<br/><em>Momento 0?</em></h2>
+      <p>Escríbenos para reservar tu lugar en el próximo evento o para cotizar tu evento privado.</p>
+      <div class="contacto__actions">
+        <a href="https://wa.me/521XXXXXXXXXX" class="btn btn--primary" target="_blank">💬 Escríbenos por WhatsApp</a>
+        <a href="https://instagram.com/momento0" class="btn btn--outline--light" target="_blank">📸 Síguenos en Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__logo">Momento <span>0</span></p>
+      <p class="footer__copy">Colonia Roma · Ciudad de México · 2025</p>
+      <div class="footer__social">
+        <a href="#">TikTok</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
