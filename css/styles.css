@@ -220,6 +220,15 @@ em { font-style: italic; color: var(--gold-lt); }
   margin-bottom: 24px;
 }
 
+.hero__slogan {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
 .hero__sub {
   font-size: 1.1rem;
   color: rgba(245,242,238,0.7);
