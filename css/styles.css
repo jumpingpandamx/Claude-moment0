@@ -698,29 +698,33 @@ em { font-style: italic; color: var(--gold-lt); }
 }
 
 .tm__boletia {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  gap: 8px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 6px 14px;
+  margin-top: 8px;
 }
 
 .tm__boletia span {
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--grey);
+  color: rgba(255,255,255,0.3);
+  white-space: nowrap;
 }
 
 .tm__boletia-logo {
-  height: 22px;
+  height: 14px;
   width: auto;
-  opacity: 0.6;
-  transition: opacity var(--transition);
+  opacity: 0.35;
   filter: brightness(0) invert(1);
+  transition: opacity var(--transition);
 }
 
-.tm__boletia-logo:hover { opacity: 1; }
+.tm__boletia:hover .tm__boletia-logo,
+.tm__boletia:hover span { opacity: 0.7; }
 
 /* Responsive */
 @media (max-width: 860px) {
