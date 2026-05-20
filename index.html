@@ -21,10 +21,15 @@
         <img src="assets/logo.svg" alt="Moment0" class="nav__logo-img" />
       </a>
       <ul class="nav__links">
-        <li><a href="#eventos">Eventos</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#contacto" class="btn btn--sm">Reserva tu lugar</a></li>
+        <li><a href="#eventos" data-i18n="nav.events">Eventos</a></li>
+        <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
+        <li><a href="#contacto" class="btn btn--sm" data-i18n="nav.cta">Reserva tu lugar</a></li>
       </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <span>|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
       <button class="nav__hamburger" aria-label="Menú">
         <span></span><span></span><span></span>
       </button>
@@ -36,37 +41,35 @@
     <div class="hero__overlay"></div>
     <div class="hero__content container">
       <p class="hero__tag">Colonia Roma · CDMX</p>
-      <h1 class="hero__title">El momento<br/>en que todo<br/><em>comienza.</em></h1>
+      <h1 class="hero__title" data-i18n-html="hero.title">El momento<br/>en que todo<br/><em>comienza.</em></h1>
       <p class="hero__slogan">Real Connections</p>
-      <p class="hero__sub">Experiencias diseñadas para conectar, disfrutar y recordar. Eventos sociales, corporativos y culturales en un espacio que lo tiene todo.</p>
-      <a href="#eventos" class="btn btn--primary">Ver próximos eventos</a>
+      <p class="hero__sub" data-i18n="hero.sub">Experiencias diseñadas para conectar, disfrutar y recordar. Eventos sociales, corporativos y culturales en un espacio que lo tiene todo.</p>
+      <a href="#eventos" class="btn btn--primary" data-i18n="hero.cta">Ver próximos eventos</a>
     </div>
-    <div class="hero__scroll">
-      <span></span>
-    </div>
+    <div class="hero__scroll"><span></span></div>
   </section>
 
   <!-- ABOUT -->
   <section class="about" id="nosotros">
     <div class="container about__grid">
       <div class="about__text">
-        <span class="label">¿Qué es Moment0?</span>
-        <h2>Ese instante justo antes<br/>de que todo pase.</h2>
-        <p>Moment0 nació de la idea de que los mejores recuerdos empiezan en un punto específico: el momento en que decides estar presente. Creamos eventos únicos en un hotel boutique en la Colonia Roma donde la experiencia lo es todo — desde la primera copa hasta el último beat.</p>
-        <p>Sociales, corporativos, exposiciones, degustaciones. Si hay personas, hay historia. Y aquí creamos la tuya.</p>
+        <span class="label" data-i18n="about.label">¿Qué es Moment0?</span>
+        <h2 data-i18n-html="about.title">Ese instante justo antes<br/>de que todo pase.</h2>
+        <p data-i18n="about.p1">Moment0 nació de la idea de que los mejores recuerdos empiezan en un punto específico: el momento en que decides estar presente. Creamos eventos únicos en un hotel boutique en la Colonia Roma donde la experiencia lo es todo — desde la primera copa hasta el último beat.</p>
+        <p data-i18n="about.p2">Sociales, corporativos, exposiciones, degustaciones. Si hay personas, hay historia. Y aquí creamos la tuya.</p>
       </div>
       <div class="about__stats">
         <div class="stat">
           <strong>4</strong>
-          <span>Tipos de evento</span>
+          <span data-i18n="about.stat1">Tipos de evento</span>
         </div>
         <div class="stat">
           <strong>Roma</strong>
-          <span>Ubicación</span>
+          <span data-i18n="about.stat2">Ubicación</span>
         </div>
         <div class="stat">
           <strong>∞</strong>
-          <span>Conexiones</span>
+          <span data-i18n="about.stat3">Conexiones</span>
         </div>
       </div>
     </div>
@@ -75,65 +78,65 @@
   <!-- EVENTOS -->
   <section class="eventos" id="eventos">
     <div class="container">
-      <span class="label">Próximas experiencias</span>
-      <h2 class="section-title">Elige tu Moment0</h2>
+      <span class="label" data-i18n="events.label">Próximas experiencias</span>
+      <h2 class="section-title" data-i18n="events.title">Elige tu Moment0</h2>
 
       <div class="eventos__grid">
 
         <!-- Speed Dating -->
         <article class="card card--dating">
-          <div class="card__badge">Social</div>
+          <div class="card__badge" data-i18n="badge.social">Social</div>
           <div class="card__emoji">💫</div>
-          <h3 class="card__title">Speed Dating</h3>
-          <p class="card__desc">Cuatro minutos. Una persona. La posibilidad de que todo cambie. Conoce a todos los asistentes en una noche de conversaciones rápidas, snacks y bebida incluida. Si hay chispa, se comparte número de WhatsApp.</p>
+          <h3 class="card__title" data-i18n="dating.title">Speed Dating</h3>
+          <p class="card__desc" data-i18n="dating.desc">Cuatro minutos. Una persona. La posibilidad de que todo cambie. Conoce a todos los asistentes en una noche de conversaciones rápidas, snacks y bebida incluida. Si hay chispa, se comparte número de WhatsApp.</p>
           <ul class="card__details">
-            <li>⏱ 4 min por pareja</li>
-            <li>🍹 Bebida y snacks incluidos</li>
-            <li>📲 Match = intercambio de WhatsApp</li>
+            <li data-i18n="dating.d1">⏱ 4 min por pareja</li>
+            <li data-i18n="dating.d2">🍹 Bebida y snacks incluidos</li>
+            <li data-i18n="dating.d3">📲 Match = intercambio de WhatsApp</li>
           </ul>
-          <a href="#contacto" class="btn btn--outline">Quiero asistir</a>
+          <a href="#contacto" class="btn btn--outline" data-i18n="card.cta">Quiero asistir</a>
         </article>
 
         <!-- Noche de Juegos -->
         <article class="card card--games">
-          <div class="card__badge">Social</div>
+          <div class="card__badge" data-i18n="badge.social">Social</div>
           <div class="card__emoji">🎲</div>
-          <h3 class="card__title">Noche de Juegos de Mesa</h3>
-          <p class="card__desc">Olvídate de la pantalla. Una noche rodeada de juegos clásicos y modernos, buena comida, snacks y la mejor compañía. Cover de entrada, todo lo demás es diversión.</p>
+          <h3 class="card__title" data-i18n="games.title">Noche de Juegos de Mesa</h3>
+          <p class="card__desc" data-i18n="games.desc">Olvídate de la pantalla. Una noche rodeada de juegos clásicos y modernos, buena comida, snacks y la mejor compañía. Cover de entrada, todo lo demás es diversión.</p>
           <ul class="card__details">
-            <li>🃏 Selección de juegos de mesa</li>
-            <li>🍕 Ronda de snacks y comida</li>
-            <li>🎟 Cover de entrada</li>
+            <li data-i18n="games.d1">🃏 Selección de juegos de mesa</li>
+            <li data-i18n="games.d2">🍕 Ronda de snacks y comida</li>
+            <li data-i18n="games.d3">🎟 Cover de entrada</li>
           </ul>
-          <a href="#contacto" class="btn btn--outline">Quiero asistir</a>
+          <a href="#contacto" class="btn btn--outline" data-i18n="card.cta">Quiero asistir</a>
         </article>
 
         <!-- Cata de Vinos -->
         <article class="card card--wine">
-          <div class="card__badge">Cultural</div>
+          <div class="card__badge" data-i18n="badge.cultural">Cultural</div>
           <div class="card__emoji">🍷</div>
-          <h3 class="card__title">Cata de Vinos</h3>
-          <p class="card__desc">Una experiencia sensorial para los que quieren saber más sobre el mundo del vino. Degustación guiada, maridaje, información vinícola y todo lo que quieras comer. El vino ya está incluido.</p>
+          <h3 class="card__title" data-i18n="wine.title">Cata de Vinos</h3>
+          <p class="card__desc" data-i18n="wine.desc">Una experiencia sensorial para los que quieren saber más sobre el mundo del vino. Degustación guiada, maridaje, información vinícola y todo lo que quieras comer. El vino ya está incluido.</p>
           <ul class="card__details">
-            <li>🍇 Vinos seleccionados incluidos</li>
-            <li>📖 Guía de cata y maridaje</li>
-            <li>🧀 Comida a la carta</li>
+            <li data-i18n="wine.d1">🍇 Vinos seleccionados incluidos</li>
+            <li data-i18n="wine.d2">📖 Guía de cata y maridaje</li>
+            <li data-i18n="wine.d3">🧀 Comida a la carta</li>
           </ul>
-          <a href="#contacto" class="btn btn--outline">Quiero asistir</a>
+          <a href="#contacto" class="btn btn--outline" data-i18n="card.cta">Quiero asistir</a>
         </article>
 
         <!-- Coffee Party -->
         <article class="card card--coffee">
-          <div class="card__badge">Fiesta</div>
+          <div class="card__badge" data-i18n="badge.party">Fiesta</div>
           <div class="card__emoji">☕</div>
-          <h3 class="card__title">Coffee Party</h3>
-          <p class="card__desc">¿Por qué esperar a la noche para festejar? A partir de las 10am, DJ en vivo, café de especialidad, pan artesanal y si quieres algo con más vuelo: mimosas, cervezas y cócteles ligeros. Cinco horas de pura energía matutina.</p>
+          <h3 class="card__title" data-i18n="coffee.title">Coffee Party</h3>
+          <p class="card__desc" data-i18n="coffee.desc">¿Por qué esperar a la noche para festejar? A partir de las 10am, DJ en vivo, café de especialidad, pan artesanal y si quieres algo con más vuelo: mimosas, cervezas y cócteles ligeros. Cinco horas de pura energía matutina.</p>
           <ul class="card__details">
-            <li>☀️ 10am — 3pm</li>
-            <li>🎵 DJ en vivo · 5 horas</li>
-            <li>🥂 Café + opción de alcohol ligero</li>
+            <li data-i18n="coffee.d1">☀️ 10am — 3pm</li>
+            <li data-i18n="coffee.d2">🎵 DJ en vivo · 5 horas</li>
+            <li data-i18n="coffee.d3">🥂 Café + opción de alcohol ligero</li>
           </ul>
-          <a href="#contacto" class="btn btn--outline">Quiero asistir</a>
+          <a href="#contacto" class="btn btn--outline" data-i18n="card.cta">Quiero asistir</a>
         </article>
 
       </div>
@@ -143,15 +146,15 @@
   <!-- TIPOS DE EVENTO -->
   <section class="tipos">
     <div class="container">
-      <span class="label">¿Tienes algo en mente?</span>
-      <h2 class="section-title">También organizamos</h2>
+      <span class="label" data-i18n="tipos.label">¿Tienes algo en mente?</span>
+      <h2 class="section-title" data-i18n="tipos.title">También organizamos</h2>
       <div class="tipos__grid">
-        <div class="tipo">🥂 Eventos Sociales</div>
-        <div class="tipo">💼 Corporativos</div>
-        <div class="tipo">🖼 Exposiciones</div>
-        <div class="tipo">🎤 Presentaciones</div>
-        <div class="tipo">🎂 Celebraciones</div>
-        <div class="tipo">🤝 Networking</div>
+        <div class="tipo" data-i18n="tipos.t1">🥂 Eventos Sociales</div>
+        <div class="tipo" data-i18n="tipos.t2">💼 Corporativos</div>
+        <div class="tipo" data-i18n="tipos.t3">🖼 Exposiciones</div>
+        <div class="tipo" data-i18n="tipos.t4">🎤 Presentaciones</div>
+        <div class="tipo" data-i18n="tipos.t5">🎂 Celebraciones</div>
+        <div class="tipo" data-i18n="tipos.t6">🤝 Networking</div>
       </div>
     </div>
   </section>
@@ -159,11 +162,11 @@
   <!-- CTA / CONTACTO -->
   <section class="contacto" id="contacto">
     <div class="container contacto__inner">
-      <h2>¿Listo para tu<br/><em>Moment0?</em></h2>
-      <p>Escríbenos para reservar tu lugar en el próximo evento o para cotizar tu evento privado.</p>
+      <h2 data-i18n-html="cta.title">¿Listo para tu<br/><em>Moment0?</em></h2>
+      <p data-i18n="cta.sub">Escríbenos para reservar tu lugar en el próximo evento o para cotizar tu evento privado.</p>
       <div class="contacto__actions">
-        <a href="https://wa.me/527229313202?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20mi%20lugar%20en%20el%20pr%C3%B3ximo%20evento%20de%20Moment0.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" class="btn btn--primary" target="_blank">💬 Escríbenos por WhatsApp</a>
-        <a href="https://instagram.com/moment0.mx" class="btn btn--outline--light" target="_blank">📸 Síguenos en Instagram</a>
+        <a href="https://wa.me/527229313202?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20mi%20lugar%20en%20el%20pr%C3%B3ximo%20evento%20de%20Moment0.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" class="btn btn--primary" target="_blank" data-i18n="cta.wa">💬 Escríbenos por WhatsApp</a>
+        <a href="https://instagram.com/moment0.mx" class="btn btn--outline--light" target="_blank" data-i18n="cta.ig">📸 Síguenos en Instagram</a>
       </div>
     </div>
   </section>
@@ -179,7 +182,7 @@
       </div>
 
       <div class="footer__contact">
-        <p class="footer__contact-title">Contacto</p>
+        <p class="footer__contact-title" data-i18n="footer.contact">Contacto</p>
         <ul class="footer__contact-list">
           <li>
             <a href="https://wa.me/527229313202?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20mi%20lugar%20en%20el%20pr%C3%B3ximo%20evento%20de%20Moment0.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank">
@@ -195,7 +198,7 @@
       </div>
 
       <div class="footer__social-col">
-        <p class="footer__contact-title">Síguenos</p>
+        <p class="footer__contact-title" data-i18n="footer.follow">Síguenos</p>
         <div class="footer__social">
           <a href="https://tiktok.com/@moment0mx" target="_blank" aria-label="TikTok">
             <i class="fa-brands fa-tiktok"></i>

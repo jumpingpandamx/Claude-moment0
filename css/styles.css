@@ -151,6 +151,31 @@ em { font-style: italic; color: var(--gold-lt); }
 
 .nav__links a:not(.btn):hover { color: var(--gold); transition: color var(--transition); }
 
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--grey);
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--grey);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  padding: 4px 2px;
+  transition: color var(--transition);
+  font-family: var(--font-sans);
+}
+.lang-btn:hover  { color: var(--white); }
+.lang-btn.active { color: var(--gold); }
+
 .nav__hamburger {
   display: none;
   flex-direction: column;
