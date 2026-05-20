@@ -694,7 +694,33 @@ em { font-style: italic; color: var(--gold-lt); }
   font-size: 0.78rem;
   color: var(--grey);
   letter-spacing: 0.06em;
+  margin-bottom: 24px;
 }
+
+.tm__boletia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tm__boletia span {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.tm__boletia-logo {
+  height: 22px;
+  width: auto;
+  opacity: 0.6;
+  transition: opacity var(--transition);
+  filter: brightness(0) invert(1);
+}
+
+.tm__boletia-logo:hover { opacity: 1; }
 
 /* Responsive */
 @media (max-width: 860px) {

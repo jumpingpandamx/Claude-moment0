@@ -87,6 +87,7 @@ const translations = {
     'tm.cta.women':   'Reservar · Mujer',
     'tm.cta.men':     'Reservar · Hombre',
     'tm.cta.note':    'Cupo limitado · 10 lugares por género · El lugar se confirma 48hrs antes',
+    'tm.boletia.label': 'Procesado por',
   },
   en: {
     'nav.events':   'Events',
@@ -173,6 +174,7 @@ const translations = {
     'tm.cta.women':   'Reserve · Woman',
     'tm.cta.men':     'Reserve · Man',
     'tm.cta.note':    'Limited capacity · 10 spots per gender · Venue confirmed 48hrs before',
+    'tm.boletia.label': 'Processed by',
   }
 };
 
