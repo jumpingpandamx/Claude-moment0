@@ -11,7 +11,7 @@ const translations = {
     'hero.cta':     'Ver próximos eventos',
     'about.label':  '¿Qué es Moment0?',
     'about.title':  'Ese instante justo antes<br/>de que todo pase.',
-    'about.p1':     'Moment0 nació de la idea de que los mejores recuerdos empiezan en un punto específico: el momento en que decides estar presente. Creamos eventos únicos en un hotel boutique en la Colonia Roma donde la experiencia lo es todo — desde la primera copa hasta el último beat.',
+    'about.p1':     'Moment0 nació de la idea de que los mejores recuerdos empiezan en un punto específico: el momento en que decides estar presente. Creamos eventos únicos en un bar y restaurante boutique en la Colonia Roma donde la experiencia lo es todo — desde la primera copa hasta el último beat.',
     'about.p2':     'Sociales, corporativos, exposiciones, degustaciones. Si hay personas, hay historia. Y aquí creamos la tuya.',
     'about.stat1':  'Tipos de evento',
     'about.stat2':  'Ubicación',
@@ -24,9 +24,10 @@ const translations = {
     'card.cta':     'Quiero asistir',
     'dating.title': 'Speed Dating',
     'dating.desc':  'Cuatro minutos. Una persona. La posibilidad de que todo cambie. Conoce a todos los asistentes en una noche de conversaciones rápidas, snacks y bebida incluida. Si hay chispa, se comparte número de WhatsApp.',
-    'dating.d1':    '⏱ 4 min por pareja',
+    'dating.d1':    '⏱ 3 min por pareja',
     'dating.d2':    '🍹 Bebida y snacks incluidos',
     'dating.d3':    '📲 Match = intercambio de WhatsApp',
+    'dating.d4':    '💳 $1,000 MXN · incluye canapé y copa de bienvenida',
     'games.title':  'Noche de Juegos de Mesa',
     'games.desc':   'Olvídate de la pantalla. Una noche rodeada de juegos clásicos y modernos, buena comida, snacks y la mejor compañía. Cover de entrada, todo lo demás es diversión.',
     'games.d1':     '🃏 Selección de juegos de mesa',
@@ -88,6 +89,11 @@ const translations = {
     'tm.cta.men':     'Reservar · Hombre',
     'tm.cta.note':    'Cupo limitado · 10 lugares por género · El lugar se confirma 48hrs antes',
     'tm.boletia.label': 'Procesado por',
+    'tm.cd.days':    'Días',
+    'tm.cd.hours':   'Horas',
+    'tm.cd.mins':    'Minutos',
+    'tm.cd.secs':    'Segundos',
+    'tm.cd.today':   '¡El evento es hoy!',
   },
   en: {
     'nav.events':   'Events',
@@ -98,7 +104,7 @@ const translations = {
     'hero.cta':     'See upcoming events',
     'about.label':  'What is Moment0?',
     'about.title':  'That instant just before<br/>everything happens.',
-    'about.p1':     'Moment0 was born from the idea that the best memories begin at a specific point: the moment you decide to be present. We create unique events at a boutique hotel in Colonia Roma where the experience is everything — from the first drink to the last beat.',
+    'about.p1':     'Moment0 was born from the idea that the best memories begin at a specific point: the moment you decide to be present. We create unique events at a boutique bar and restaurant in Colonia Roma where the experience is everything — from the first drink to the last beat.',
     'about.p2':     'Social, corporate, exhibitions, tastings. Where there are people, there are stories. And here we create yours.',
     'about.stat1':  'Event types',
     'about.stat2':  'Location',
@@ -111,9 +117,10 @@ const translations = {
     'card.cta':     'I want to attend',
     'dating.title': 'Speed Dating',
     'dating.desc':  'Four minutes. One person. The possibility that everything changes. Meet all the attendees in a night of quick conversations, snacks and drinks included. If there\'s a spark, WhatsApp numbers are exchanged.',
-    'dating.d1':    '⏱ 4 min per partner',
+    'dating.d1':    '⏱ 3 min per partner',
     'dating.d2':    '🍹 Drinks & snacks included',
     'dating.d3':    '📲 Match = WhatsApp exchange',
+    'dating.d4':    '💳 $1,000 MXN · includes welcome canapé and one drink',
     'games.title':  'Board Game Night',
     'games.desc':   'Forget the screen. A night surrounded by classic and modern board games, great food, snacks and the best company. Cover charge at the door, everything else is just fun.',
     'games.d1':     '🃏 Board game selection',
@@ -175,6 +182,11 @@ const translations = {
     'tm.cta.men':     'Reserve · Man',
     'tm.cta.note':    'Limited capacity · 10 spots per gender · Venue confirmed 48hrs before',
     'tm.boletia.label': 'Processed by',
+    'tm.cd.days':    'Days',
+    'tm.cd.hours':   'Hours',
+    'tm.cd.mins':    'Minutes',
+    'tm.cd.secs':    'Seconds',
+    'tm.cd.today':   'The event is today!',
   }
 };
 
@@ -210,6 +222,38 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 });
 
 applyLanguage(currentLang);
+
+// =====================
+// COUNTDOWN TIMER
+// =====================
+const countdownTarget = new Date('2026-06-10T20:00:00-06:00').getTime();
+
+function updateCountdown() {
+  const el = document.getElementById('countdown');
+  if (!el) return;
+
+  const diff = countdownTarget - Date.now();
+
+  if (diff <= 0) {
+    const msg = translations[currentLang]['tm.cd.today'] || '¡El evento es hoy!';
+    el.innerHTML = `<p class="tm__countdown-today">${msg}</p>`;
+    return;
+  }
+
+  const days  = Math.floor(diff / 86400000);
+  const hours = Math.floor((diff % 86400000) / 3600000);
+  const mins  = Math.floor((diff % 3600000)  / 60000);
+  const secs  = Math.floor((diff % 60000)    / 1000);
+
+  const pad = n => String(n).padStart(2, '0');
+  document.getElementById('cd-days').textContent  = pad(days);
+  document.getElementById('cd-hours').textContent = pad(hours);
+  document.getElementById('cd-mins').textContent  = pad(mins);
+  document.getElementById('cd-secs').textContent  = pad(secs);
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
 
 // =====================
 // NAV SCROLL EFFECT
