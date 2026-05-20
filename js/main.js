@@ -94,6 +94,7 @@ const translations = {
     'tm.cd.mins':    'Minutos',
     'tm.cd.secs':    'Segundos',
     'tm.cd.today':   '¡El evento es hoy!',
+    'other.date':    '📅 Fecha por confirmar',
   },
   en: {
     'nav.events':   'Events',
@@ -187,6 +188,7 @@ const translations = {
     'tm.cd.mins':    'Minutes',
     'tm.cd.secs':    'Seconds',
     'tm.cd.today':   'The event is today!',
+    'other.date':    '📅 Date to be confirmed',
   }
 };
 
