@@ -202,7 +202,7 @@ em { font-style: italic; color: var(--gold-lt); }
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1208 50%, #0d0a04 100%);
+  background: url('../assets/hero-bg.jpg') center center / cover no-repeat;
   overflow: hidden;
 }
 
@@ -210,15 +210,18 @@ em { font-style: italic; color: var(--gold-lt); }
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 60% 60% at 80% 30%, rgba(201,168,76,0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(201,168,76,0.05) 0%, transparent 50%);
+  background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.75) 0%,
+    rgba(10,8,4,0.65) 50%,
+    rgba(0,0,0,0.7) 100%
+  );
 }
 
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a84c' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);
 }
 
 .hero__content {
@@ -298,6 +301,15 @@ em { font-style: italic; color: var(--gold-lt); }
   align-items: center;
 }
 
+.about__img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 28px;
+  opacity: 0.85;
+}
+
 .about__text h2 {
   font-family: var(--font-serif);
   font-size: clamp(1.8rem, 3vw, 2.6rem);
@@ -369,11 +381,23 @@ em { font-style: italic; color: var(--gold-lt); }
   border-color: rgba(201,168,76,0.3);
 }
 
+.card__img {
+  width: calc(100% + 80px);
+  margin: -40px -40px 28px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  opacity: 0.8;
+  transition: opacity var(--transition);
+}
+.card:hover .card__img { opacity: 1; }
+
 .card::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
+  z-index: 1;
 }
 
 .card--dating::before  { background: linear-gradient(90deg, #e91e8c, #ff6b6b); }
@@ -701,30 +725,34 @@ em { font-style: italic; color: var(--gold-lt); }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,120,35,0.25);
   border-radius: 20px;
   padding: 6px 14px;
   margin-top: 8px;
+  transition: border-color var(--transition);
 }
+
+.tm__boletia:hover { border-color: rgba(255,120,35,0.5); }
 
 .tm__boletia span {
   font-size: 0.65rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,120,35,0.5);
   white-space: nowrap;
+  transition: color var(--transition);
 }
+
+.tm__boletia:hover span { color: rgba(255,120,35,0.85); }
 
 .tm__boletia-logo {
   height: 14px;
   width: auto;
-  opacity: 0.35;
-  filter: brightness(0) invert(1);
+  opacity: 0.5;
   transition: opacity var(--transition);
 }
 
-.tm__boletia:hover .tm__boletia-logo,
-.tm__boletia:hover span { opacity: 0.7; }
+.tm__boletia:hover .tm__boletia-logo { opacity: 0.9; }
 
 /* Responsive */
 @media (max-width: 860px) {
