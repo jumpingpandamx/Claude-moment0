@@ -5,6 +5,7 @@ const translations = {
   es: {
     'nav.events':   'Eventos',
     'nav.about':    'Nosotros',
+    'nav.faq':      'FAQ',
     'nav.cta':      'Reserva tu lugar',
     'hero.title':   'El momento<br/>en que todo<br/><em>comienza.</em>',
     'hero.sub':     'Experiencias diseñadas para conectar, disfrutar y recordar. Eventos sociales, corporativos y culturales en un espacio que lo tiene todo.',
@@ -125,6 +126,7 @@ const translations = {
   en: {
     'nav.events':   'Events',
     'nav.about':    'About',
+    'nav.faq':      'FAQ',
     'nav.cta':      'Reserve your spot',
     'hero.title':   'The moment<br/>when everything<br/><em>begins.</em>',
     'hero.sub':     'Experiences designed to connect, enjoy and remember. Social, corporate and cultural events in a space that has it all.',
@@ -266,6 +268,10 @@ function applyLanguage(lang) {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
 
+  document.querySelectorAll('.faq__item--open .faq__body').forEach(body => {
+    body.style.maxHeight = body.scrollHeight + 'px';
+  });
+
   document.documentElement.lang = lang;
   localStorage.setItem('moment0-lang', lang);
   currentLang = lang;
@@ -367,20 +373,37 @@ document.head.insertAdjacentHTML('beforeend', `
 // =====================
 // FAQ ACCORDION
 // =====================
-const faqItems = document.querySelectorAll('.faq__item');
+(function () {
+  var items = document.querySelectorAll('.faq__item');
+  if (!items.length) return;
 
-faqItems.forEach(item => {
-  item.querySelector('.faq__question').addEventListener('click', () => {
-    const isOpen = item.classList.contains('faq__item--open');
+  function openItem(item) {
+    var body = item.querySelector('.faq__body');
+    item.classList.add('faq__item--open');
+    item.querySelector('.faq__btn').setAttribute('aria-expanded', 'true');
+    body.style.maxHeight = body.scrollHeight + 'px';
+  }
 
-    faqItems.forEach(i => {
-      i.classList.remove('faq__item--open');
-      i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
-    });
+  function closeItem(item) {
+    var body = item.querySelector('.faq__body');
+    item.classList.remove('faq__item--open');
+    item.querySelector('.faq__btn').setAttribute('aria-expanded', 'false');
+    body.style.maxHeight = '0';
+  }
 
-    if (!isOpen) {
-      item.classList.add('faq__item--open');
-      item.querySelector('.faq__question').setAttribute('aria-expanded', 'true');
-    }
+  // Open first item on load without playing the open animation
+  var firstBody = items[0].querySelector('.faq__body');
+  firstBody.style.transition = 'none';
+  openItem(items[0]);
+  requestAnimationFrame(function () {
+    requestAnimationFrame(function () { firstBody.style.transition = ''; });
   });
-});
+
+  items.forEach(function (item) {
+    item.querySelector('.faq__btn').addEventListener('click', function () {
+      var isOpen = item.classList.contains('faq__item--open');
+      items.forEach(closeItem);
+      if (!isOpen) openItem(item);
+    });
+  });
+})();
