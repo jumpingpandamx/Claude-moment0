@@ -100,6 +100,27 @@ const translations = {
     'tm.cd.secs':    'Segundos',
     'tm.cd.today':   '¡El evento es hoy!',
     'other.date':    '📅 Fecha por confirmar',
+    'faq.title': 'Preguntas Frecuentes',
+    'faq.q1':  '¿Cómo es la dinámica del evento?',
+    'faq.a1':  'Todo comienza 48 horas antes — si tu perfil fue aceptado, recibirás un mensaje de WhatsApp con la dirección exacta del lugar en la Colonia Roma. Ese es tu primer momento Moment0.<br><br><strong>7:45 PM — Registro:</strong> Llega puntual y presenta tu INE en la entrada. Solo entran los perfiles confirmados — sin excepciones.<br><br><strong>8:00 PM — Rompe el hielo:</strong> Una copa de vino y un canapé de bienvenida. El staff de Moment0 da la bienvenida oficial y explica la dinámica en menos de 5 minutos. Respira. Estás listo/a.<br><br><strong>8:15 PM — Las rondas:</strong> 10 rondas de 3 minutos cada una. Una señal indica el inicio y el fin de cada conversación. Sin teléfonos, sin distracciones — solo tú y la persona frente a ti.<br><br><strong>Dinámica final:</strong> Al terminar las rondas hay un momento especial de cierre diseñado para que la noche no termine de golpe.<br><br><strong>Intercambio de contactos:</strong> Si hubo conexión, el intercambio es completamente voluntario. Sin presión, sin obligación — solo si ambos quieren.<br><br><strong>Cierre:</strong> Los asistentes de Tres Minutos tienen acceso a una cena con precio especial en el mismo lugar. Porque la mejor parte de la noche a veces empieza después de las rondas.',
+    'faq.q2':  '¿Hay código de vestimenta?',
+    'faq.a2':  'Sí. El dress code es smart casual — queremos que te veas bien y te sientas bien. Recuerda que de la vista nace el amor, así que aprovecha la ocasión para dar tu mejor primera impresión.',
+    'faq.q3':  '¿Es seguro conocer personas en un evento así?',
+    'faq.a3':  'Totalmente. Todos los asistentes pasan por un proceso de admisión antes de confirmar su lugar. Nadie entra sin haber sido verificado previamente, y el staff de Moment0 estará presente durante todo el evento.',
+    'faq.q4':  '¿Qué tipo de personas asisten?',
+    'faq.a4':  'Personas que viven o visitan CDMX — nacionales e internacionales. El rango de edad suele ser entre 25 y 45 años. Lo que todos tienen en común es que están abiertos a conocer gente nueva en persona, sin filtros ni algoritmos.',
+    'faq.q5':  '¿Van a ser el mismo número de hombres que mujeres?',
+    'faq.a5':  'Sí, siempre. El evento está diseñado con paridad exacta — si hay 10 mujeres, hay 10 hombres. Ni uno más, ni uno menos. Si un género se llena antes, el otro cierra automáticamente.',
+    'faq.q6':  '¿Qué pasa si me pongo nervioso/a?',
+    'faq.a6':  'Es completamente normal — y para eso estamos. El evento es guiado de principio a fin por el staff de Moment0. Te explicamos la dinámica antes de comenzar, manejamos los tiempos de cada ronda y nos aseguramos de que nadie se quede sin conversación. Solo tienes que aparecer — nosotros nos encargamos del resto.',
+    'faq.q7':  '¿Puedo ir si nunca he hecho speed dating?',
+    'faq.a7':  'Claro — de hecho la mayoría de los asistentes es su primera vez. El formato es sencillo, el ambiente es relajado y el staff está ahí para que te sientas cómodo/a desde el momento en que llegas.',
+    'faq.q8':  '¿Qué pasa si no conecto con nadie?',
+    'faq.a8':  'Que igual lo pasaste bien, tomaste algo rico y conociste gente interesante. Moment0 no es solo para encontrar pareja — es para salir de la pantalla y recordar que conectar en persona se siente diferente. Y siempre hay una próxima edición.',
+    'faq.q9':  '¿Cómo confirmo mi lugar?',
+    'faq.a9':  'Reservas en línea a través de moment0.mx. Después recibirás un mensaje de WhatsApp con instrucciones rápidas. Tu lugar se confirma en menos de 24 horas una vez que revisemos tu perfil.',
+    'faq.q10': '¿Puedo asistir si soy extranjero/a?',
+    'faq.a10': 'Absolutamente. Los eventos son bilingües — español e inglés. Roma Norte es un barrio cosmopolita y nuestros eventos reflejan eso.',
   },
   en: {
     'nav.events':   'Events',
@@ -199,6 +220,27 @@ const translations = {
     'tm.cd.secs':    'Seconds',
     'tm.cd.today':   'The event is today!',
     'other.date':    '📅 Date to be confirmed',
+    'faq.title': 'Frequently Asked Questions',
+    'faq.q1':  'How does the event work?',
+    'faq.a1':  'Everything starts 48 hours before — if your profile was accepted, you\'ll receive a WhatsApp message with the exact address in Colonia Roma. That\'s your first Moment0 moment.<br><br><strong>7:45 PM — Check-in:</strong> Arrive on time and present your ID at the door. Only confirmed profiles enter — no exceptions.<br><br><strong>8:00 PM — Icebreaker:</strong> A welcome glass of wine and a canapé. The Moment0 staff gives the official welcome and explains the format in under 5 minutes. Breathe. You\'re ready.<br><br><strong>8:15 PM — The rounds:</strong> 10 rounds of 3 minutes each. A signal marks the start and end of each conversation. No phones, no distractions — just you and the person in front of you.<br><br><strong>Final dynamic:</strong> After the rounds there\'s a special closing moment designed so the night doesn\'t end abruptly.<br><br><strong>Contact exchange:</strong> If there was a connection, exchanging info is completely voluntary. No pressure, no obligation — only if both want to.<br><br><strong>To close the night:</strong> Tres Minutos attendees get access to dinner at a special price at the same venue. Because the best part of the night sometimes starts after the rounds.',
+    'faq.q2':  'Is there a dress code?',
+    'faq.a2':  'Yes. The dress code is smart casual — we want you to look good and feel good. First impressions matter, so make the most of it.',
+    'faq.q3':  'Is it safe to meet people at an event like this?',
+    'faq.a3':  'Absolutely. All attendees go through an admission process before confirming their spot. Nobody enters without being verified in advance, and Moment0 staff will be present throughout the entire event.',
+    'faq.q4':  'What kind of people attend?',
+    'faq.a4':  'People who live in or are visiting CDMX — locals and internationals. The age range is typically between 25 and 45 years old. What everyone has in common is being open to meeting new people in person, without filters or algorithms.',
+    'faq.q5':  'Will there be equal numbers of men and women?',
+    'faq.a5':  'Yes, always. The event is designed with exact parity — if there are 10 women, there are 10 men. Not one more, not one less. If one gender sells out first, the other closes automatically.',
+    'faq.q6':  'What if I get nervous?',
+    'faq.a6':  'Completely normal — and that\'s what we\'re here for. The event is guided from start to finish by the Moment0 staff. We explain the format before we begin, manage the timing of each round, and make sure nobody is left without a conversation. Just show up — we handle the rest.',
+    'faq.q7':  'Can I attend if I\'ve never done speed dating before?',
+    'faq.a7':  'Of course — in fact most attendees are doing it for the first time. The format is simple, the atmosphere is relaxed, and the staff is there to make you feel comfortable from the moment you arrive.',
+    'faq.q8':  'What if I don\'t connect with anyone?',
+    'faq.a8':  'You still had a great time, had a good drink, and met interesting people. Moment0 isn\'t just about finding a partner — it\'s about stepping away from the screen and remembering what connecting in person feels like. And there\'s always a next edition.',
+    'faq.q9':  'How do I confirm my spot?',
+    'faq.a9':  'Reserve online at moment0.mx. You\'ll then receive a WhatsApp message with quick instructions. Your spot is confirmed within 24 hours once we review your profile.',
+    'faq.q10': 'Can I attend if I\'m a foreigner?',
+    'faq.a10': 'Absolutely. Events are bilingual — Spanish and English. Roma Norte is a cosmopolitan neighborhood and our events reflect that.',
   }
 };
 
@@ -321,3 +363,24 @@ document.head.insertAdjacentHTML('beforeend', `
     }
   </style>
 `);
+
+// =====================
+// FAQ ACCORDION
+// =====================
+const faqItems = document.querySelectorAll('.faq__item');
+
+faqItems.forEach(item => {
+  item.querySelector('.faq__question').addEventListener('click', () => {
+    const isOpen = item.classList.contains('faq__item--open');
+
+    faqItems.forEach(i => {
+      i.classList.remove('faq__item--open');
+      i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+    });
+
+    if (!isOpen) {
+      item.classList.add('faq__item--open');
+      item.querySelector('.faq__question').setAttribute('aria-expanded', 'true');
+    }
+  });
+});
