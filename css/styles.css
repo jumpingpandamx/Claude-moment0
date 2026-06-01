@@ -30,6 +30,7 @@ body {
 
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
+picture { display: contents; }
 
 .container {
   max-width: 1200px;
@@ -202,8 +203,17 @@ em { font-style: italic; color: var(--gold-lt); }
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url('../assets/hero-bg.jpg') center center / cover no-repeat;
   overflow: hidden;
+}
+
+.hero__bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
 }
 
 .hero::before {
