@@ -101,7 +101,25 @@ em{font-style:italic;color:var(--gold-lt)}
 .sd-cta-section h2{font-family:var(--font-serif);font-size:clamp(2.5rem,5vw,4rem);line-height:1.15;margin-bottom:20px}
 .sd-cta-section p{font-size:1.05rem;color:rgba(245,242,238,.6);max-width:460px;margin:0 auto 48px;font-weight:300}
 .hero::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to right,rgba(0,0,0,.75) 0%,rgba(0,0,0,.5) 50%,rgba(0,0,0,.2) 100%);z-index:0;pointer-events:none}
-@media(max-width:767px){.sd-section{padding:80px 0}.sd-steps{grid-template-columns:1fr}.sd-includes-grid{grid-template-columns:repeat(2,1fr);gap:12px}.sd-ctas{flex-direction:column;align-items:flex-start}}
+/* Urgency bar */
+.urgency-bar{background:#C9A84C;color:#000000;font-size:14px;font-weight:600;padding:10px 16px;text-align:center;width:100%;position:relative;z-index:9999;line-height:1.4}
+/* Hero CTA override */
+.btn--hero-cta{background:#C9A84C;color:#000000;font-weight:700;border-radius:8px}
+.btn--hero-cta:hover{background:#e4c97e;transform:translateY(-2px)}
+/* Sticky mobile CTA */
+.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;padding:12px 16px 16px;background:#111111;border-top:1px solid rgba(201,168,76,.2);z-index:998}
+.sticky-cta__btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;background:#C9A84C;color:#000000;font-weight:700;border-radius:8px;font-size:1rem;letter-spacing:.02em}
+.sticky-cta__btn:hover{background:#e4c97e}
+@media(max-width:768px){
+  .hero__content{padding-top:80px}
+  .hero__sub{margin-bottom:20px}
+  .sd-ctas{flex-direction:column;align-items:stretch}
+  .btn--hero-cta{min-height:52px;width:100%;display:flex;align-items:center;justify-content:center;font-size:1rem}
+  .sticky-cta{display:flex}
+  body{padding-bottom:80px}
+}
+@media(min-width:769px){.sticky-cta{display:none!important}}
+@media(max-width:767px){.sd-section{padding:80px 0}.sd-steps{grid-template-columns:1fr}.sd-includes-grid{grid-template-columns:repeat(2,1fr);gap:12px}}
 @media(max-width:480px){.sd-includes-grid{grid-template-columns:1fr}}
   </style>
   <!-- Full stylesheet: async, never blocks first paint -->
@@ -109,6 +127,11 @@ em{font-style:italic;color:var(--gold-lt)}
   <noscript><link rel="stylesheet" href="../css/styles.css" /></noscript>
 </head>
 <body>
+
+  <!-- URGENCY BAR -->
+  <div class="urgency-bar">
+    <span data-i18n="sd.urgency">⏳ Últimos lugares disponibles · Miércoles 10 de junio · Roma Norte</span>
+  </div>
 
   <!-- NAV -->
   <nav class="nav">
@@ -147,7 +170,7 @@ em{font-style:italic;color:var(--gold-lt)}
       <p class="hero__slogan" data-i18n="sd.hero.sub">Tres minutos. Una persona. La posibilidad de que todo cambie.</p>
       <p class="hero__sub" data-i18n="sd.hero.body">Moment0 organiza eventos de speed dating íntimos en Roma Norte para personas reales que quieren conectar sin filtros ni algoritmos. 20 personas, perfiles verificados, vino incluido.</p>
       <div class="sd-ctas">
-        <a href="https://3-minutos-speed-dating.boletia.com" class="btn btn--primary" target="_blank" rel="noopener noreferrer" data-i18n="sd.hero.cta">Reservar mi lugar</a>
+        <a href="https://3-minutos-speed-dating.boletia.com" class="btn btn--primary btn--hero-cta" target="_blank" rel="noopener noreferrer" data-i18n="sd.hero.cta">Reservar mi lugar</a>
         <a href="#proximo-evento" class="btn btn--outline" data-i18n="sd.hero.cta2">Ver próximo evento</a>
       </div>
     </div>
@@ -545,6 +568,11 @@ em{font-style:italic;color:var(--gold-lt)}
       <p class="footer__credit">Hecho en México con amor 🇲🇽 por <a href="https://www.jumpingpanda.mx" target="_blank" rel="noopener noreferrer">Jumping Panda</a></p>
     </div>
   </footer>
+
+  <!-- STICKY MOBILE CTA -->
+  <div class="sticky-cta">
+    <a href="https://3-minutos-speed-dating.boletia.com" class="sticky-cta__btn" target="_blank" rel="noopener noreferrer" data-i18n="sd.hero.cta">Reservar mi lugar</a>
+  </div>
 
   <script src="../js/main.js" defer></script>
 

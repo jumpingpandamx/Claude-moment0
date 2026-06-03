@@ -123,6 +123,7 @@ const translations = {
     'faq.q10': '¿Puedo asistir si soy extranjero/a?',
     'faq.a10': 'Absolutamente. Los eventos son bilingües — español e inglés. Roma Norte es un barrio cosmopolita y nuestros eventos reflejan eso.',
     // Speed Dating CDMX landing page
+    'sd.urgency':     '⏳ Últimos lugares disponibles · Miércoles 10 de junio · Roma Norte',
     'sd.page.title':  'Speed Dating en CDMX · Moment0 — Roma Norte',
     'sd.back':        '← Todos los eventos',
     'sd.hero.tag':    'Roma Norte · CDMX',
@@ -288,6 +289,7 @@ const translations = {
     'faq.q10': 'Can I attend if I\'m a foreigner?',
     'faq.a10': 'Absolutely. Events are bilingual — Spanish and English. Roma Norte is a cosmopolitan neighborhood and our events reflect that.',
     // Speed Dating CDMX landing page
+    'sd.urgency':     '⏳ Last spots available · Wednesday June 10 · Roma Norte',
     'sd.page.title':  'Speed Dating in Mexico City · Moment0 — Roma Norte',
     'sd.back':        '← All events',
     'sd.hero.tag':    'Roma Norte · CDMX',
