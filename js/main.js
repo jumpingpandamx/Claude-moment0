@@ -413,6 +413,16 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 40);
 });
 
+// Offset nav below urgency bar (if present on page)
+const urgencyBarEl = document.querySelector('.urgency-bar');
+if (urgencyBarEl) {
+  function updateUrgencyOffset() {
+    document.documentElement.style.setProperty('--urgency-h', urgencyBarEl.offsetHeight + 'px');
+  }
+  updateUrgencyOffset();
+  window.addEventListener('resize', updateUrgencyOffset);
+}
+
 // =====================
 // MOBILE HAMBURGER
 // =====================
