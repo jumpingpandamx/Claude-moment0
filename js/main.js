@@ -436,6 +436,25 @@ hamburger?.addEventListener('click', () => {
   }
 });
 
+function closeMobileMenu() {
+  if (navLinks) navLinks.style.display = 'none';
+}
+
+// Close on scroll
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 10) closeMobileMenu();
+});
+
+// Close on outside click
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav')) closeMobileMenu();
+});
+
+// Close on nav link click
+navLinks?.querySelectorAll('a').forEach(function(a) {
+  a.addEventListener('click', closeMobileMenu);
+});
+
 // =====================
 // SCROLL REVEAL
 // =====================
