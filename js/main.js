@@ -415,12 +415,13 @@ window.addEventListener('scroll', () => {
 
 // Offset nav below urgency bar (if present on page)
 const urgencyBarEl = document.querySelector('.urgency-bar');
-if (urgencyBarEl) {
-  function updateUrgencyOffset() {
-    document.documentElement.style.setProperty('--urgency-h', urgencyBarEl.offsetHeight + 'px');
+if (urgencyBarEl && nav) {
+  function setNavTop() {
+    nav.style.top = urgencyBarEl.offsetHeight + 'px';
   }
-  updateUrgencyOffset();
-  window.addEventListener('resize', updateUrgencyOffset);
+  setNavTop();
+  window.addEventListener('resize', setNavTop);
+  window.addEventListener('load', setNavTop);
 }
 
 // =====================
