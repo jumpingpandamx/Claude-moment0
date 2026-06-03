@@ -448,7 +448,9 @@ hamburger?.addEventListener('click', () => {
 });
 
 function closeMobileMenu() {
-  if (navLinks) navLinks.style.display = 'none';
+  if (!navLinks || !hamburger) return;
+  if (getComputedStyle(hamburger).display === 'none') return; // desktop: leave nav alone
+  navLinks.style.display = 'none';
 }
 
 // Close on scroll
