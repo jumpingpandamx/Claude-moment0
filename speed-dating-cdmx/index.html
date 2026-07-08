@@ -64,10 +64,17 @@ em{font-style:italic;color:var(--gold-lt)}
 .hero__title{font-family:var(--font-serif);font-size:clamp(3rem,7vw,5.5rem);font-weight:700;line-height:1.05;margin-bottom:24px}
 .hero__slogan{font-family:var(--font-serif);font-size:1.1rem;font-style:italic;color:var(--gold);letter-spacing:.08em;margin-bottom:16px}
 .hero__sub{font-size:1.1rem;color:rgba(245,242,238,.7);max-width:480px;margin-bottom:40px;font-weight:300}
-.hero__scroll{position:absolute;bottom:36px;left:50%;transform:translateX(-50%)}
-.hero__scroll span{display:block;width:1px;height:60px;background:linear-gradient(to bottom,var(--gold),transparent);margin:0 auto;animation:scrollLine 2s ease-in-out infinite}
-@keyframes scrollLine{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 @media(max-width:680px){.nav__links{display:none}.nav__hamburger{display:flex}.hero__title{font-size:3rem}}
+.nav__item--dropdown{position:relative}
+.nav__submenu{position:absolute;top:100%;left:0;padding-top:14px;min-width:210px;display:none}
+.nav__item--dropdown:hover .nav__submenu{display:block}
+.nav__submenu-card{background:rgba(10,10,10,.97);backdrop-filter:blur(12px);border:1px solid rgba(201,168,76,.2);border-radius:12px;padding:8px;display:flex;flex-direction:column;gap:2px;box-shadow:0 16px 40px rgba(0,0,0,.45)}
+.nav__submenu-card a{padding:10px 14px;border-radius:8px;font-size:.85rem;font-weight:500;color:var(--white);white-space:nowrap;transition:background var(--transition),color var(--transition)}
+.nav__submenu-card a:hover{background:rgba(201,168,76,.12);color:var(--gold)}
+.nav__evtoggle{display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+.nav__evtoggle::after{content:'▾';font-size:.7em;opacity:.65;display:inline-block;transition:transform var(--transition)}
+.nav__item--dropdown:hover .nav__evtoggle::after{transform:rotate(180deg)}
+@media(max-width:680px){.nav__submenu{position:static;display:block;padding-top:6px;min-width:0}.nav__submenu-card{background:transparent;backdrop-filter:none;border:none;box-shadow:none;padding:4px 0 0 16px;gap:0}.nav__submenu-card a{padding:8px 0;color:rgba(245,242,238,.75)}.nav__evtoggle::after{display:none}}
   </style>
   <!-- Page-specific styles -->
   <style>
@@ -144,7 +151,15 @@ em{font-style:italic;color:var(--gold-lt)}
         <img src="../assets/logo.svg" alt="Moment0" class="nav__logo-img" />
       </a>
       <ul class="nav__links">
-        <li><a href="https://moment0.mx/#eventos" data-i18n="nav.events">Eventos</a></li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="https://moment0.mx/#eventos" class="nav__evtoggle" data-i18n="nav.events">Eventos</a>
+          <div class="nav__submenu">
+            <div class="nav__submenu-card">
+              <a href="/speed-dating-cdmx/" data-i18n="nav.ev.speed">Speed Dating</a>
+              <a href="/coffee-party-cdmx/" data-i18n="nav.ev.coffee">Coffee Party</a>
+            </div>
+          </div>
+        </li>
         <li><a href="https://moment0.mx/#nosotros" data-i18n="nav.about">Nosotros</a></li>
         <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
         <li><a href="https://3-minutos-speed-dating.boletia.com" class="btn btn--sm" target="_blank" rel="noopener noreferrer" data-i18n="nav.cta">Reserva tu lugar</a></li>
@@ -178,7 +193,6 @@ em{font-style:italic;color:var(--gold-lt)}
         <a href="#proximo-evento" class="btn btn--outline" data-i18n="sd.hero.cta2">Ver próximo evento</a>
       </div>
     </div>
-    <div class="hero__scroll"><span></span></div>
   </section>
 
   <!-- WHAT IS SPEED DATING -->

@@ -275,27 +275,6 @@ em { font-style: italic; color: var(--gold-lt); }
   font-weight: 300;
 }
 
-.hero__scroll {
-  position: absolute;
-  bottom: 36px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.hero__scroll span {
-  display: block;
-  width: 1px;
-  height: 60px;
-  background: linear-gradient(to bottom, var(--gold), transparent);
-  margin: 0 auto;
-  animation: scrollLine 2s ease-in-out infinite;
-}
-@keyframes scrollLine {
-  0% { transform: scaleY(0); transform-origin: top; }
-  50% { transform: scaleY(1); transform-origin: top; }
-  51% { transform: scaleY(1); transform-origin: bottom; }
-  100% { transform: scaleY(0); transform-origin: bottom; }
-}
-
 /* =====================
    ABOUT
    ===================== */
