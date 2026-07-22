@@ -567,36 +567,6 @@ em { font-style: italic; color: var(--gold-lt); }
   margin: 24px 0 32px;
 }
 
-.tm__countdown-unit {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.tm__countdown-num {
-  font-family: var(--font-serif);
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 700;
-  color: var(--gold);
-  line-height: 1;
-  min-width: 2ch;
-  text-align: center;
-}
-
-.tm__countdown-label {
-  font-size: 0.62rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--grey);
-}
-
-.tm__countdown-sep {
-  font-size: 1.5rem;
-  color: rgba(201,168,76,0.3);
-  margin-bottom: 18px;
-}
-
 .tm__countdown-today {
   font-family: var(--font-serif);
   font-size: 1.5rem;
@@ -811,39 +781,6 @@ em { font-style: italic; color: var(--gold-lt); }
   margin-bottom: 24px;
 }
 
-.tm__boletia {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid rgba(255,120,35,0.25);
-  border-radius: 20px;
-  padding: 6px 14px;
-  margin-top: 8px;
-  transition: border-color var(--transition);
-}
-
-.tm__boletia:hover { border-color: rgba(255,120,35,0.5); }
-
-.tm__boletia span {
-  font-size: 0.65rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgba(255,120,35,0.5);
-  white-space: nowrap;
-  transition: color var(--transition);
-}
-
-.tm__boletia:hover span { color: rgba(255,120,35,0.85); }
-
-.tm__boletia-logo {
-  height: 14px;
-  width: auto;
-  opacity: 0.5;
-  transition: opacity var(--transition);
-}
-
-.tm__boletia:hover .tm__boletia-logo { opacity: 0.9; }
-
 /* ── Tres Minutos responsive ── */
 @media (max-width: 767px) {
   .tm {
@@ -978,6 +915,11 @@ em { font-style: italic; color: var(--gold-lt); }
 
 .faq__btn:hover { color: #c8963e; }
 
+.faq__btn > span:first-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .faq__btn:focus-visible {
   outline: 2px solid rgba(200,150,62,0.4);
   outline-offset: 4px;
@@ -993,6 +935,7 @@ em { font-style: italic; color: var(--gold-lt); }
   justify-content: center;
   width: 24px;
   height: 24px;
+  overflow: hidden;
   color: #c8963e;
   font-size: 1.4rem;
   line-height: 1;
@@ -1024,7 +967,7 @@ em { font-style: italic; color: var(--gold-lt); }
 
 @media (max-width: 680px) {
   .faq__inner { padding: 0 16px; }
-  .faq__btn { font-size: 0.9375rem; min-height: 56px; padding: 18px 0; }
+  .faq__btn { font-size: 0.9375rem; min-height: 56px; padding: 18px 0; gap: 16px; }
 }
 
 /* =====================

@@ -26,7 +26,7 @@ const translations = {
     'badge.party':    'Fiesta',
     'card.cta':     'Quiero asistir',
     'dating.title': 'Speed Dating',
-    'dating.desc':  'Cuatro minutos. Una persona. La posibilidad de que todo cambie. Conoce a todos los asistentes en una noche de conversaciones rápidas, snacks y bebida incluida. Si hay chispa, se comparte número de WhatsApp.',
+    'dating.desc':  'Tres minutos. Una persona. La posibilidad de que todo cambie. Conoce a todos los asistentes en una noche de conversaciones rápidas, snacks y bebida incluida. Si hay chispa, se comparte número de WhatsApp.',
     'dating.d1':    '⏱ 3 min por pareja',
     'dating.d2':    '🍹 Bebida y snacks incluidos',
     'dating.d3':    '📲 Match = intercambio de WhatsApp',
@@ -94,15 +94,9 @@ const translations = {
     'tm.safety.l2':   'El número de hombres y mujeres es exactamente igual. El intercambio de información personal es decisión de cada persona.',
     'tm.safety.l3':   'Staff de Moment0 presente en todo momento.',
     'tm.safety.l4':   'Tolerancia cero a acoso o comentarios no solicitados sobre apariencia física.',
-    'tm.cta.women':   'Reservar · Mujer',
-    'tm.cta.men':     'Reservar · Hombre',
-    'tm.cta.note':    'Cupo limitado · 10 lugares por género · El lugar se confirma 48hrs antes',
-    'tm.boletia.label': 'Procesado por',
-    'tm.cd.days':    'Días',
-    'tm.cd.hours':   'Horas',
-    'tm.cd.mins':    'Minutos',
-    'tm.cd.secs':    'Segundos',
-    'tm.cd.today':   '¡El evento es hoy!',
+    'tm.cta.women':   'Avísame · Mujer',
+    'tm.cta.men':     'Avísame · Hombre',
+    'tm.cta.note':    'Déjanos tu WhatsApp y te avisamos cuando abramos la próxima fecha.',
     'other.date':    '📅 Fecha por confirmar',
     'faq.title': 'Preguntas Frecuentes',
     'faq.q1':  '¿Cómo es la dinámica del evento?',
@@ -128,12 +122,13 @@ const translations = {
     // Speed Dating CDMX landing page
     'sd.urgency':     '✨ Muy pronto anunciamos las próximas fechas · Mantente al tanto',
     'sd.page.title':  'Speed Dating en CDMX · Moment0 — Roma Norte',
+    'sd.nav.cta':     'Avísame',
     'sd.back':        '← Todos los eventos',
     'sd.hero.tag':    'Roma Norte · CDMX',
     'sd.hero.title':  'Speed Dating en CDMX',
     'sd.hero.sub':    'Tres minutos. Una persona. La posibilidad de que todo cambie.',
     'sd.hero.body':   'Moment0 organiza eventos de speed dating íntimos en Roma Norte para personas reales que quieren conectar sin filtros ni algoritmos. 20 personas, perfiles verificados, vino incluido.',
-    'sd.hero.cta':    'Reservar mi lugar',
+    'sd.hero.cta':    'Avísame de la próxima fecha',
     'sd.hero.cta2':   'Ver próximo evento',
     'sd.what.label':  'El formato',
     'sd.what.title':  '¿Qué es el speed dating?',
@@ -157,19 +152,19 @@ const translations = {
     'sd.inc.i5':      'Staff de Moment0 presente',
     'sd.inc.i6':      'Perfil verificado de cada asistente',
     'sd.inc.price':   'MXN por persona',
-    'sd.next.label':  'Reserva tu lugar',
+    'sd.next.label':  'Lista de aviso',
     'sd.next.date':   'Próximas fechas muy pronto · Mantente al tanto',
     'sd.next.loc':    'Roma Norte, CDMX · Lugar confirmado 48hrs antes',
     'sd.next.cap':    'Solo 20 personas · 10 mujeres · 10 hombres',
-    'sd.next.cta.w':  'Reservar · Mujer',
-    'sd.next.cta.m':  'Reservar · Hombre',
+    'sd.next.cta.w':  'Avísame · Mujer',
+    'sd.next.cta.m':  'Avísame · Hombre',
     'sd.safe.label':  'Nuestro compromiso',
     'sd.safe.title':  'Tu seguridad, nuestra prioridad',
     'sd.faq.label':   'FAQ',
     'sd.faq.title':   'Preguntas frecuentes sobre speed dating',
-    'sd.cta.title':   '¿Listo para tu<br/><em>Moment0?</em>',
-    'sd.cta.sub':     'Reserva tu lugar antes de que se agoten los 20 espacios.',
-    'sd.cta.btn':     'Reservar mi lugar',
+    'sd.cta.title':   '¿Quieres enterarte del próximo<br/><em>Moment0?</em>',
+    'sd.cta.sub':     'Déjanos un WhatsApp y te avisamos cuando abramos la próxima fecha.',
+    'sd.cta.btn':     'Avísame por WhatsApp',
     // Coffee Party CDMX landing page
     'cp.page.title':  'Primer Café · Coffee Party CDMX | Moment0',
     'cp.urgency':     '☕ Cupo limitado · Preventa $349 MXN hasta agotar · Sábado 1 de agosto, Roma Norte',
@@ -301,7 +296,7 @@ const translations = {
     'badge.party':    'Party',
     'card.cta':     'I want to attend',
     'dating.title': 'Speed Dating',
-    'dating.desc':  'Four minutes. One person. The possibility that everything changes. Meet all the attendees in a night of quick conversations, snacks and drinks included. If there\'s a spark, WhatsApp numbers are exchanged.',
+    'dating.desc':  'Three minutes. One person. The possibility that everything changes. Meet all the attendees in a night of quick conversations, snacks and drinks included. If there\'s a spark, WhatsApp numbers are exchanged.',
     'dating.d1':    '⏱ 3 min per partner',
     'dating.d2':    '🍹 Drinks & snacks included',
     'dating.d3':    '📲 Match = WhatsApp exchange',
@@ -369,15 +364,9 @@ const translations = {
     'tm.safety.l2':   'The number of men and women is exactly equal. Sharing personal information is each person\'s own decision.',
     'tm.safety.l3':   'Moment0 staff present at all times.',
     'tm.safety.l4':   'Zero tolerance for harassment or unsolicited comments about physical appearance.',
-    'tm.cta.women':   'Reserve · Woman',
-    'tm.cta.men':     'Reserve · Man',
-    'tm.cta.note':    'Limited capacity · 10 spots per gender · Venue confirmed 48hrs before',
-    'tm.boletia.label': 'Processed by',
-    'tm.cd.days':    'Days',
-    'tm.cd.hours':   'Hours',
-    'tm.cd.mins':    'Minutes',
-    'tm.cd.secs':    'Seconds',
-    'tm.cd.today':   'The event is today!',
+    'tm.cta.women':   'Notify me · Woman',
+    'tm.cta.men':     'Notify me · Man',
+    'tm.cta.note':    'Leave us your WhatsApp and we will let you know when the next date opens.',
     'other.date':    '📅 Date to be confirmed',
     'faq.title': 'Frequently Asked Questions',
     'faq.q1':  'How does the event work?',
@@ -403,12 +392,13 @@ const translations = {
     // Speed Dating CDMX landing page
     'sd.urgency':     '✨ New dates coming soon · Stay tuned',
     'sd.page.title':  'Speed Dating in Mexico City · Moment0 — Roma Norte',
+    'sd.nav.cta':     'Notify me',
     'sd.back':        '← All events',
     'sd.hero.tag':    'Roma Norte · CDMX',
     'sd.hero.title':  'Speed Dating in Mexico City',
     'sd.hero.sub':    'Three minutes. One person. The possibility that everything changes.',
     'sd.hero.body':   'Moment0 organizes intimate speed dating events in Roma Norte for real people who want to connect without filters or algorithms. 20 people, verified profiles, wine included.',
-    'sd.hero.cta':    'Book my spot',
+    'sd.hero.cta':    'Notify me about the next date',
     'sd.hero.cta2':   'See next event',
     'sd.what.label':  'The format',
     'sd.what.title':  'What is speed dating?',
@@ -432,19 +422,19 @@ const translations = {
     'sd.inc.i5':      'Moment0 staff present',
     'sd.inc.i6':      'Verified profile for every attendee',
     'sd.inc.price':   'MXN per person',
-    'sd.next.label':  'Reserve your spot',
+    'sd.next.label':  'Notification list',
     'sd.next.date':   'New dates coming soon · Stay tuned',
     'sd.next.loc':    'Roma Norte, CDMX · Venue confirmed 48hrs before',
     'sd.next.cap':    'Only 20 people · 10 women · 10 men',
-    'sd.next.cta.w':  'Book · Woman',
-    'sd.next.cta.m':  'Book · Man',
+    'sd.next.cta.w':  'Notify me · Woman',
+    'sd.next.cta.m':  'Notify me · Man',
     'sd.safe.label':  'Our commitment',
     'sd.safe.title':  'Your safety, our priority',
     'sd.faq.label':   'FAQ',
     'sd.faq.title':   'Frequently asked questions about speed dating',
-    'sd.cta.title':   'Ready for your<br/><em>Moment0?</em>',
-    'sd.cta.sub':     'Book your spot before all 20 spaces are gone.',
-    'sd.cta.btn':     'Book my spot',
+    'sd.cta.title':   'Want to hear about the next<br/><em>Moment0?</em>',
+    'sd.cta.sub':     'Leave us your WhatsApp and we will let you know when the next date opens.',
+    'sd.cta.btn':     'Notify me on WhatsApp',
     // Coffee Party CDMX landing page
     'cp.page.title':  'Primer Café · Coffee Party CDMX | Moment0',
     'cp.urgency':     '☕ Limited spots · Presale $349 MXN until sold out · Saturday, August 1, Roma Norte',
@@ -590,38 +580,6 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 });
 
 applyLanguage(currentLang);
-
-// =====================
-// COUNTDOWN TIMER
-// =====================
-const countdownTarget = new Date('2026-06-10T20:00:00-06:00').getTime();
-
-function updateCountdown() {
-  const el = document.getElementById('countdown');
-  if (!el) return;
-
-  const diff = countdownTarget - Date.now();
-
-  if (diff <= 0) {
-    const msg = translations[currentLang]['tm.cd.today'] || '¡El evento es hoy!';
-    el.innerHTML = `<p class="tm__countdown-today">${msg}</p>`;
-    return;
-  }
-
-  const days  = Math.floor(diff / 86400000);
-  const hours = Math.floor((diff % 86400000) / 3600000);
-  const mins  = Math.floor((diff % 3600000)  / 60000);
-  const secs  = Math.floor((diff % 60000)    / 1000);
-
-  const pad = n => String(n).padStart(2, '0');
-  document.getElementById('cd-days').textContent  = pad(days);
-  document.getElementById('cd-hours').textContent = pad(hours);
-  document.getElementById('cd-mins').textContent  = pad(mins);
-  document.getElementById('cd-secs').textContent  = pad(secs);
-}
-
-updateCountdown();
-setInterval(updateCountdown, 1000);
 
 // =====================
 // NAV SCROLL EFFECT
